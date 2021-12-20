@@ -750,6 +750,10 @@ print(java.union(python))
 # a=input() # 변수 a의 문자열을
 # a=list(a) # 하나하나 문자로 나눠 리스트에 저장한다.
 
+# 아스키코드 
+# ord() # 문자를 아스키코드로
+# chr() # 아스키코드를 문자로
+
 ###python 시간체크###
 '''
 import time
