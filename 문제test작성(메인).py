@@ -1,10 +1,18 @@
-def solution(answers):
-    answer = []
+def solution(lottos, win_nums):
+    answer = [0,0]
+    rank = [6,6,5,4,3,2,1]
+
+    cnt = 0
+    cnt0 = lottos.count(0)
+
+    for i in lottos:
+        if i in win_nums:
+            cnt += 1
+    
+    answer[0], answer[1] = rank[cnt + cnt0], rank[cnt]
+
     return answer
-lists=input()
-lists=list(lists)
-a,b,c=[],[],[]
-p1,p2,p3=['1','2','3','4','5'],['2','1','2','3','2','4','2','5'],['3','3','1','1','2','2','4','4','5','5']
-for i in len(lists):
-    X
-print(lists)
+
+a=[0,0,0,0,0,0]
+b=[31, 10, 45, 1, 6, 19]
+print(solution(a,b))
