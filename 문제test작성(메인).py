@@ -1,13 +1,15 @@
-from collections import Counter
+num=int(input())
 
-mylist = input().strip()
-dic = dict(Counter(mylist))
-
-values = [i for i in dic.values()]
-values = sorted(values, reverse=True)
-
-big = values[0]
-
-result = [i for i, k in dic.items() if big == k]
-result = ''.join(sorted(result))
-print(result)
+line=1
+while num>line:
+    num-=line
+    line+=1
+    
+if line%2==0:
+    a=num
+    b=line-num+1
+else:
+    a=line-num+1
+    b=num
+    
+print(a, '/', b, sep='')
