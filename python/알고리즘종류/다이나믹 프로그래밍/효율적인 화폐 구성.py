@@ -18,8 +18,8 @@ d = [10001]*(m+1)
 
 # 다이나믹 프로그래밍 진행(보텀업)
 d[0] = 0
-for i in range(n):
-    for j in range(array[i], m+1):
+for i in range(n): # i 는 가각의 화폐 단위
+    for j in range(array[i], m+1): # j 는 각각의 금액
         if d[j - array[i]] != 10001: # (i-k)원을 만드는 방법이 존재하는 경우
             d[j] = min(d[j], d[j - array[i]] + 1)
 
