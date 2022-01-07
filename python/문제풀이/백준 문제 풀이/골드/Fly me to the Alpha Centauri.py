@@ -6,6 +6,10 @@ for i in range(T):
     while True: 
         if d <= n*(n+1): 
             break 
-        n += 1 #총 이동 거리가 n의 제곱보다 작거나 같을 때 
-        if d <= n**2: print(n*2-1) #총 이동 거리가 n의 제곱보다 클 때 
-        else: print(n*2)
+        n += 1 
+        #총 이동 거리가 n의 제곱보다 작거나 같을 때 
+    if d <= n**2: 
+        print(n*2-1) 
+    #총 이동 거리가 n의 제곱보다 클 때 
+    else: 
+        print(n*2)
