@@ -38,4 +38,4 @@ def solution(new_id):
 
     return answer
     
-solution(input())
+print(solution(input()))
