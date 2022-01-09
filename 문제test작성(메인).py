@@ -1,15 +1,7 @@
-num=int(input())
+t=int(input())
 
-line=1
-while num>line:
-    num-=line
-    line+=1
-    
-if line%2==0:
-    a=num
-    b=line-num+1
-else:
-    a=line-num+1
-    b=num
-    
-print(a, '/', b, sep='')
+p_list=[0,1,1]
+for i in range(2,t):
+    a=p_list[i]+p_list[i-1]
+    p_list.append(a)
+print(p_list[t])
