@@ -1,6 +1,16 @@
-d=''
-c=list(map(int,input().split()))
-c.sort()
-for i in range(len(c)):
-    d+=str(c[i])+' '
-print(d[:-1])    
+t = int(input())
+
+for i in range(t):
+    a, b, c = map(int, input().split())
+    cnt=0
+    while True:
+        if c <= 0:
+            c+=a
+            break
+        cnt+=1
+        c-=a
+    c *= 100 
+    
+    
+    print(c+cnt)
+    
