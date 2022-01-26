@@ -27,3 +27,4 @@ for i in range(2, n+1):
 
 # 계산된 결과 출력
 print(d[n])
+
