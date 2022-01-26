@@ -18,4 +18,5 @@ def solution(answers):
     if a_cnt == b_cnt == c_cnt:
         answer.append(a_cnt)
     
+    return answer
 print(solution([1,2,3,4,5]))
